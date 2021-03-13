@@ -1,0 +1,42 @@
+@mixin image-box( $a, $b) {
+    grid-column-start: $a;
+    grid-column-end: $b;
+    grid-row: 310px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: {
+        family: 'Montserrat Bold', sans-serif;
+        size: 22px;
+        weight: 600;
+    };
+    color: $white;
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+};
+
+@mixin mobile-image-box( $a, $b, $c, $d) {
+    grid-column-start: $a;
+    grid-column-end: $b;
+    grid-row-start: $c;
+    grid-row-end: $d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: {
+        family: 'Montserrat Bold', sans-serif;
+        size: 22px;
+        weight: 600;
+    };
+    color: $white;
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    };
+};
